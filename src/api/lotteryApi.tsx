@@ -10,6 +10,6 @@ export interface DataRow {
 }
 
 export const fetchLotteryData = async (): Promise<DataRow[]> => {
-  const response = await axios.get<DataRow[]>('http://localhost:8000/api/lottery');
+  const response = await axios.get<DataRow[]>('https://laravel-production-4bdc.up.railway.app/api/lottery/'); // จริงๆควรใช้เป็น .env เพิ่อ dev บน local เพื่อเพิ่มความปลอดภัย
   return response.data;
 };
