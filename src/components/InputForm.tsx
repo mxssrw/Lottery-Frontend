@@ -13,7 +13,7 @@ interface DataTableProps {
     lotteryData: DataRow[];
 }
 const InputForm: React.FC<DataTableProps> = ({ lotteryData }) => {
-    const [lotteryNumber, setLotteryNumber] = useState('905');
+    const [lotteryNumber, setLotteryNumber] = useState('');
     const [result, setResult] = useState('');
     const [toast, setToast] = useState<{ title: string; description: string; type?: 'success' | 'error' } | null>(null);
 
